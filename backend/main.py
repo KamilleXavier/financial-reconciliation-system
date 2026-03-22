@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "API rodando"}
+    return {"message": "Financial Reconciliation API running"}

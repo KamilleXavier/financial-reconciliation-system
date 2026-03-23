@@ -8,10 +8,10 @@ def conciliar(df_a, df_b):
         data_a = row_a["data"]
         descricao_a = row_a["descricao"]
 
-        match = df_b[
-            (df_b["valor"] == valor_a) &
-            (df_b["data"] == data_a)
-        ]
+        cond_data = df_b["data"] == data_a
+        cond_valor = abs(df_b["valor"] - valor_a) < 1
+
+        match = df_b[cond_data & cond_valor]
 
         if not match.empty:
             status = "Conciliado"

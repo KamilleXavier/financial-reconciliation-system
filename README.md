@@ -41,7 +41,7 @@ Ideal para estudos, portfolio e demonstração de integração entre backend e f
 │   │   └── conciliacao.py
 │   └── requirements.txt
 └── frontend
-    └── app.py
+└── app.py
 
 **🛠️ Tecnologias Utilizadas**
 
